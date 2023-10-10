@@ -12,7 +12,7 @@ import com.teststore.utility.Log;
 
 public class IndexPageTest extends BaseClass{
 	IndexPage indexPage;
-	
+	// Adding the commit for understating the code
 	@Parameters("browser")
 	@BeforeMethod(groups= {"Smoke","Sanity","Regression"})
 	public void setUp(String browser) {
