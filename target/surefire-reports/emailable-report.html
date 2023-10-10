@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test_All</a></td><td class="num">9</td><td class="num attn">1</td><td class="num">0</td><td class="num">228,451</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test_All &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.teststore.testcases.LoginPageTest</td><td><a href="#m0">loginTest</a></td><td rowspan="1">1696912263822</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test_All &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.teststore.testcases.AddToCartPageTest</td><td><a href="#m1">addToCartPageTest</a></td><td rowspan="1">1696912318004</td><td rowspan="1">11381</td></tr><tr class="passedodd"><td rowspan="1">com.teststore.testcases.CheckOutPageTest</td><td><a href="#m2">checkOutTest</a></td><td rowspan="1">1696912340956</td><td rowspan="1">16278</td></tr><tr class="passedeven"><td rowspan="1">com.teststore.testcases.EndToEndTest</td><td><a href="#m3">endToEndTest</a></td><td rowspan="1">1696912399486</td><td rowspan="1">18133</td></tr><tr class="passedodd"><td rowspan="1">com.teststore.testcases.HomePageTest</td><td><a href="#m4">validateWellcomeMSG</a></td><td rowspan="1">1696912277050</td><td rowspan="1">4483</td></tr><tr class="passedeven"><td rowspan="2">com.teststore.testcases.IndexPageTest</td><td><a href="#m5">getMyStoreTitleTest</a></td><td rowspan="1">1696912212473</td><td rowspan="1">201</td></tr><tr class="passedeven"><td><a href="#m6">verifyingMyStoreLogo</a></td><td rowspan="1">1696912235187</td><td rowspan="1">312</td></tr><tr class="passedodd"><td rowspan="1">com.teststore.testcases.LoginPageTest</td><td><a href="#m7">gettingCuurentURLtest</a></td><td rowspan="1">1696912257878</td><td rowspan="1">4765</td></tr><tr class="passedeven"><td rowspan="1">com.teststore.testcases.OrderConfirmPageTest</td><td><a href="#m8">confirmOrderTest</a></td><td rowspan="1">1696912370044</td><td rowspan="1">18558</td></tr><tr class="passedodd"><td rowspan="1">com.teststore.testcases.SearchProductPageTest</td><td><a href="#m9">searchArmaniProduct</a></td><td rowspan="1">1696912297591</td><td rowspan="1">7919</td></tr></tbody>
+</table>
+<h2>Test_All</h2><h3 id="m0">com.teststore.testcases.LoginPageTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Date1904Support
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at com.teststore.utility.NewExcelLibrary.&lt;init&gt;(NewExcelLibrary.java:36)
+	at com.teststore.dataprovider.DataProviders.&lt;init&gt;(DataProviders.java:9)
+	at java.lang.Class.newInstance(Class.java:442)
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.Date1904Support
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 47 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.teststore.testcases.AddToCartPageTest#addToCartPageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.teststore.testcases.CheckOutPageTest#checkOutTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.teststore.testcases.EndToEndTest#endToEndTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.teststore.testcases.HomePageTest#validateWellcomeMSG</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.teststore.testcases.IndexPageTest#getMyStoreTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.teststore.testcases.IndexPageTest#verifyingMyStoreLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.teststore.testcases.LoginPageTest#gettingCuurentURLtest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.teststore.testcases.OrderConfirmPageTest#confirmOrderTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.teststore.testcases.SearchProductPageTest#searchArmaniProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

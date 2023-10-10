@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Cross_Browser]" parallel="tests">
+  <test thread-count="5" name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.teststore.testcases.EndToEndTest">
+        <methods>
+          <include name="endToEndTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.teststore.testcases.EndToEndTest -->
+      <class name="com.teststore.testcases.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="gettingCuurentURLtest"/>
+        </methods>
+      </class> <!-- com.teststore.testcases.LoginPageTest -->
+      <class name="com.teststore.testcases.CheckOutPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+          <include name="checkOutTest"/>
+          <include name="tearDown"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.teststore.testcases.CheckOutPageTest -->
+      <class name="com.teststore.testcases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+          <include name="validateWellcomeMSG"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.teststore.testcases.HomePageTest -->
+      <class name="com.teststore.testcases.SearchProductPageTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="searchArmaniProduct"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.teststore.testcases.SearchProductPageTest -->
+      <class name="com.teststore.testcases.AddToCartPageTest">
+        <methods>
+          <include name="addToCartPageTest"/>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.teststore.testcases.AddToCartPageTest -->
+      <class name="com.teststore.testcases.IndexPageTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+          <include name="getMyStoreTitleTest"/>
+          <include name="verifyingMyStoreLogo"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.teststore.testcases.IndexPageTest -->
+      <class name="com.teststore.testcases.OrderConfirmPageTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="confirmOrderTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.teststore.testcases.OrderConfirmPageTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.teststore.testcases.EndToEndTest">
+        <methods>
+          <include name="endToEndTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.teststore.testcases.EndToEndTest -->
+      <class name="com.teststore.testcases.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+          <include name="afterSuite"/>
+          <include name="gettingCuurentURLtest"/>
+        </methods>
+      </class> <!-- com.teststore.testcases.LoginPageTest -->
+      <class name="com.teststore.testcases.CheckOutPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+          <include name="checkOutTest"/>
+          <include name="tearDown"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.teststore.testcases.CheckOutPageTest -->
+      <class name="com.teststore.testcases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+          <include name="validateWellcomeMSG"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.teststore.testcases.HomePageTest -->
+      <class name="com.teststore.testcases.AddToCartPageTest">
+        <methods>
+          <include name="addToCartPageTest"/>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.teststore.testcases.AddToCartPageTest -->
+      <class name="com.teststore.testcases.OrderConfirmPageTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="confirmOrderTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.teststore.testcases.OrderConfirmPageTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Cross_Browser] -->

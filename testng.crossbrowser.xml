@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cross_Browser" thread-count="5" >
+ <listeners>
+ 	<listener class-name="com.teststore.utility.ListenerClass"></listener>
+ </listeners>
+  <test name="ChromeTest">
+  
+  <parameter name="browser" value="Chrome"></parameter>
+  
+    <classes>
+     <class name="com.teststore.testcases.HomePageTest"/>
+      <class name="com.teststore.testcases.AddToCartPageTest"/>
+      <class name="com.teststore.testcases.IndexPageTest"/>
+      <class name="com.teststore.testcases.LoginPageTest"/>
+      <class name="com.teststore.testcases.OrderConfirmPageTest"/>
+      <class name="com.teststore.testcases.EndToEndTest"/>
+      <class name="com.teststore.testcases.SearchProductPageTest"/>
+      <class name="com.teststore.testcases.CheckOutPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <listeners>
+ 	<listener class-name="com.teststore.utility.ListenerClass"></listener>
+ </listeners>
+  <test  name="FirefoxTest">
+  
+  <parameter name="browser" value="Firefox"></parameter>
+  
+    <classes>
+      <class name="com.teststore.testcases.HomePageTest"/>
+      <class name="com.teststore.testcases.AddToCartPageTest"/>
+      <class name="com.teststore.testcases.IndexPageTest"/>
+      <class name="com.teststore.testcases.LoginPageTest"/>
+      <class name="com.teststore.testcases.OrderConfirmPageTest"/>
+      <class name="com.teststore.testcases.EndToEndTest"/>
+      <class name="com.teststore.testcases.SearchProductPageTest"/>
+      <class name="com.teststore.testcases.CheckOutPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
